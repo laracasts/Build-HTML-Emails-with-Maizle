@@ -4,25 +4,7 @@ bodyClass: "bg-amber-50"
 ---
 
 <x-layout>
-    <table class="w-full shadow-xl rounded">
-        <tr>
-            <td class="p-6 bg-amber-900 text-white rounded-t">
-                <h2 class="mt-2 mb-3 text-2xl text-center">
-                    {{page.title}}
-                </h2>
-            </td>
-        </tr>
-        <tr>
-            <td class="p-6 bg-white rounded-b text-center">
-                <p class="mb-16 text-base text-slate-500">
-                    username approved the document.
-                </p>
-                <p>
-                    <a href="http://document-approval.company.com/document_id">
-                        View Document
-                    </a>
-                </p>
-            </td>
-        </tr>
-    </table>
+    <x-notification bgColor="bg-amber-900">
+        <fill:message>username approved the document.</fill:message>
+    </x-notification>
 </x-layout>
