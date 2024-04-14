@@ -4,13 +4,13 @@ bodyClass: "bg-blue-50"
 ---
 
 <push name="head">
-    <outlook>
+    <mso>
         <style>
             .font-public-sans {
                 font-family: sans-serif !important;
             }
         </style>
-    </outlook>
+    </mso>
 
 
     <style>
@@ -27,6 +27,7 @@ bodyClass: "bg-blue-50"
 
 <x-layout>
     <x-notification bgColor="bg-blue-900">
+        <fill:message>{{ companyName }}</fill:message>
         <div class="text-left font-public-sans">
             <fetch url="http://approvals.test/approved">
                 <each loop="invoice in response">

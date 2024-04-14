@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "dev": "maizzle serve",
-    "build": "maizzle build production"
+    "build": "maizzle build production",
+    "marketing": "maizzle build marketing"
   },
   "dependencies": {
     "@maizzle/framework": "latest",

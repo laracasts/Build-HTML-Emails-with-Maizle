@@ -12,7 +12,18 @@
 */
 
 module.exports = {
+  locals: {
+    companyName: 'My Company Name'
+  },
+  companyName: 'My Company Name',
   build: {
+    posthtml: {
+      outlook: {tag: 'mso'},
+      // fetch: {
+      //   tags: ['get'],
+      //   attribute: 'resource'
+      // }
+    },
     templates: {
       source: 'src/templates',
       destination: {
