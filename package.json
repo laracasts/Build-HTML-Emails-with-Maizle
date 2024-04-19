@@ -1,14 +1,13 @@
 {
-  "private": true,
-  "scripts": {
-    "dev": "maizzle serve",
-    "build": "maizzle build production",
-    "marketing": "maizzle build marketing"
-  },
-  "dependencies": {
-    "@maizzle/framework": "latest",
-    "tailwindcss-box-shadow": "^2.0.0",
-    "tailwindcss-email-variants": "^2.0.0",
-    "tailwindcss-mso": "^1.4.1"
-  }
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "axios": "^1.6.4",
+        "laravel-vite-plugin": "^1.0",
+        "vite": "^5.0"
+    }
 }

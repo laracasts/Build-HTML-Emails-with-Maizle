@@ -1,0 +1,15 @@
+---
+title: "Invoice Approval Notification"
+bodyClass: "bg-blue-50"
+---
+
+<x-layout>
+    <x-notification bgColor="bg-blue-900">
+        <fill:message>@{{$username}} approved the invoice.</fill:message>
+        <p>
+            <a href="http://invoice-approval.company.com/invoices/@{{$invoice_id}}">
+                View Invoice
+            </a>
+        </p>
+    </x-notification>
+</x-layout>
